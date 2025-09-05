@@ -1,0 +1,12 @@
+PUBG作业思路
+1. 数据清洗：
+	a. 剔除作弊数据
+	b. 不剔除作弊数据
+
+2. 特征标准化：
+	a. ((100-train['playersJoined'])/100 + 1)
+	b. 100 / train['playersJoined']
+
+3. 模型选择：
+	a. 随机森林
+	b. LightGBM 模型
