@@ -111,7 +111,7 @@ def category_match_group_id(train):
     train['matchId_cat'] = train['matchId'].cat.codes
 
     # Get rid of old columns
-    train.drop(columns=['groupId', 'matchId'], inplace=True)
+    train.drop(columns=['Id', 'groupId', 'matchId'], inplace=True)
 
     logging.info("Dataset shape after category_match_group_id: {}".format(train.shape))
     logging.info(train.info())
